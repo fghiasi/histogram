@@ -1,10 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-us">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Histogram</title>
+    <script src="script.js" defer></script>
+    <link href="style.css" rel="stylesheet">
 </head>
 <body>
+
+<div id="container">
+    <canvas id="histogram">Canvas is not supported on your browser. Please Update it!</canvas>
+
+    <div>
+        <input type="text" id="input"
+               placeholder="Enter a comma-delimited list of values. EX: 1, 2, 3" required
+               minlength="1"/>
+    </div>
+
+    <div class="btn-group">
+        <button id="show">Show</button>
+        <button id="update">Update</button>
+        <button id="reset">Reset</button>
+    </div>
+
+</div>
 
 </body>
 </html>
