@@ -1,4 +1,4 @@
-<h2 align="center">A Simple Histogram Using [Canvas](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial)</h2>
+<h2 align="center">A Simple Histogram Using Canvas.</h2>
 <h3 align="center">By Farbod Ghiasi.</h3>
 
 ## 🔧 Technologies & Tools
