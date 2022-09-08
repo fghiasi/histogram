@@ -31,7 +31,6 @@ window.onload = function (){
 
     const randomNums = generateRandomDataset(randomSize)
     histogram = new Histogram(ctx, randomNums , canvas.width, canvas.height);
-    histogram.drawAxisLines();
     histogram.drawAllBars();
 }
 
