@@ -50,8 +50,8 @@ This shows the folder structure of the default template.
 ```
 histogram
 ├── src                   # primary app folder
-│   ├── index.html        # html file to that have the display layouts
-│   ├── style.css         # css file that have the style for html tags
+│   ├── index.html        # html file to that has the display layouts
+│   ├── style.css         # css file that has the style for html tags
 │   └── script.js         # Histogram class that has show + update + reset functionalities.
 └── images                # all the images shown in the README file that shows use cases.
 ```
