@@ -21,7 +21,6 @@ This is a minimalistic and extensible [Canvas](https://developer.mozilla.org/en-
 * It accepts positive and negative floating points as input up to any decimal points.
 * The histogram generates dynamic numbers of bars based on [The Rice Rule](https://en.wikipedia.org/wiki/Histogram) is presented as a simple alternative to Sturges' rule.
 * The Rice Rule dictates the number of bars to be floor(2 * cubic root of number of data points).
-* It uses device pixel ratio to support screens with high DPI.
 * It is responsive on smaller or larger screens.
 
 ## Quickstart
