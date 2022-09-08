@@ -12,23 +12,6 @@ window.onload = function (){
     canvas = document.getElementById("histogram");
     ctx = canvas.getContext("2d");
 
-    const dpr = window.devicePixelRatio;
-    const rect = canvas.getBoundingClientRect();
-
-    // Set the "actual" size of the canvas
-    canvas.width = rect.width * dpr;
-    canvas.height = rect.height * dpr;
-
-    // Scale the context to ensure correct drawing operations
-    ctx.scale(dpr, dpr);
-
-    // Set the "drawn" size of the canvas
-    canvas.style.width = `${rect.width}px`;
-    canvas.style.height = `${rect.height}px`;
-
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
-
     const randomNums = generateRandomDataset(randomSize)
     histogram = new Histogram(ctx, randomNums , canvas.width, canvas.height);
     histogram.drawAllBars();
@@ -38,20 +21,6 @@ window.onload = function (){
 window.addEventListener('resize', () => {
     canvas = document.getElementById("histogram");
     ctx = canvas.getContext("2d");
-
-    const dpr = window.devicePixelRatio;
-    const rect = canvas.getBoundingClientRect();
-
-    // Set the "actual" size of the canvas
-    canvas.width = rect.width * dpr;
-    canvas.height = rect.height * dpr;
-
-    // Scale the context to ensure correct drawing operations
-    ctx.scale(dpr, dpr);
-
-    // Set the "drawn" size of the canvas
-    canvas.style.width = `${rect.width}px`;
-    canvas.style.height = `${rect.height}px`;
 
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
